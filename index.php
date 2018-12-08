@@ -7,12 +7,12 @@ include("config.php")
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>phpChart - Be Responsive!</title>
+<title>phpChart -lalallasive!</title>
 </head>
 <body>
 
 <?php
-	
+
 	$consulta = "SELECT * FROM temperatura";
                 $ejecutar= mysqli_query($con, $consulta);
                 $i=0;
@@ -37,7 +37,7 @@ $pc->set_grid(array(
     'shadowDepth'=>3,
     'shadowColor'=>'rgba(230, 230, 230, 0.7)'
     ));
-	
+
 $pc->draw();
 ?>
 
