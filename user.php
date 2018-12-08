@@ -4,7 +4,7 @@ include("core/config.php");
                 $pass = $_POST["pass"];
                 $consulta = "SELECT * FROM users WHERE nombre='".$user."'&&pass='".$pass."'";
                 $ejecutar= mysqli_query($con, $consulta);
-              //Hola mundo
+             
                 $fila =  mysqli_num_rows($ejecutar);
                 if($fila>0){echo "<script>window.open('home.php','_self')</script>";}
                 else
