@@ -9,5 +9,5 @@ include("core/config.php");
                 if($fila>0){echo "<script>window.open('home.php','_self')</script>";}
                 else{
                     echo "<link rel='stylesheet' href='css/bootstrap.min.css'>";
-                echo "<div class='alert alert-danger mt-3 ml-2 mr-2'><strong>Error: Usuario no encontrado</strong><br><br><img src='img/fail.png' class='img img-thumbnail'><br><br><a href='index.html' class='alert-link'>Regresar</a></div>";}  
+                echo "<div class='alert alert-danger mt-3 ml-2 mr-2'><strong>Error: Usuario no Encontrado</strong><br><br><img src='img/fail.png' class='img img-thumbnail'><br><br><a href='index.html' class='alert-link'>Regresar</a></div>";}  
 ?>
