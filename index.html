@@ -1,45 +1,57 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Pagina de inicio Configuracion de temperatura</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<html lang="en">
 
-    <style media="screen">
-      body {
-        background-color: #0B0A0A;
-      }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/b4_sidebar.css">
+    <title>Document</title>
+</head>
 
-    </style>
-  </head>
-  <nav>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sidebarNavigation" data-sidebarClass="navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler leftNavbarToggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-  </nav>
-  <body>
-    <br>
-    <br>
-
-    <div class=" container border  rounded bg-light text-dark">
-      <div class="row justify-content-md-center">
-        <div class="col-3 bg-dark text-white "></div>
-        <div class="col-6 bg-primary text-white border rounded">
-          <p class="text-center">Monitor de Temperaturas</p>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
-      <div class="col-3 bg-dark text-white "></div>
-      </div>
-      <div class="row justify-content-md-center ">
-        <div class="col-3 bg-dark text-white"></div>
-        <div class="col-6 ">
-              <div class="nav flex-column nav-pills bg-secondary text-white" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="nav-link border rounded bg-secondary text-white" id="v-pills-home-tab" data-toggle="pill" href= C:\xampp\htdocs\ProyPool\appArduino/index2.php role="tab" aria-controls="v-pills-home" aria-selected="true">Sistema</a>
-                <a class="nav-link border rounded bg-secondary text-white" id="v-pills-profile-tab" data-toggle="pill" href=https://www.jardineriaon.com/temperatura-en-los-invernaderos.html role="tab" aria-controls="v-pills-profile" aria-selected="false">Informacion Relevante</a>
-                <a class="nav-link border rounded bg-secondary text-white" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Contacto</a>
-              </div>
-        </div>
-        <div class="col-3 bg-dark text-white "></div>
+    </nav>
 
-      </div>
-    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js/b4_sidebar.js"></script>
+</body>
 
-  </body>
 </html>
