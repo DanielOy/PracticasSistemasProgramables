@@ -8,12 +8,16 @@ include("config.php")
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>phpChart -lalallasive!</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
-
+<div class="button">
+<a href="javascript:location.reload()" class="btn btn-lg btn-primary mt-3 ml-3"><i class="fas fa-sync"></i> Reload</a>
+</div>
 <?php
 
-	$consulta = "SELECT * FROM temperatura";
+	$consulta = "SELECT * FROM temperatura ORDER BY id DESC LIMIT 10";
                 $ejecutar= mysqli_query($con, $consulta);
                 $i=0;
 				$valores = array();
@@ -22,7 +26,8 @@ include("config.php")
 					$valor=$fila['valor'];
 				$i++;
 				array_push($valores,floatval($valor));
-				}
+                }
+                $valores = array_reverse($valores);
 				print_r($valores);
 $pc = new C_PhpChartX(array($valores),'basic_chart');
 $pc->set_title(array('text'=>'Historial de Temperaturas'));
