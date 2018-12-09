@@ -15,6 +15,7 @@ include("config.php")
 <div class="button">
 <a href="javascript:location.reload()" class="btn btn-lg btn-primary mt-3 ml-3"><i class="fas fa-sync"></i> Reload</a>
 </div>
+<div class="column">
 <?php
 
 	$consulta = "SELECT * FROM temperatura ORDER BY id DESC LIMIT 10";
@@ -45,6 +46,8 @@ $pc->set_grid(array(
 
 $pc->draw();
 ?>
+</div>
+
 
 <style>
     .jqplot-target{
