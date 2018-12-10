@@ -1,5 +1,134 @@
-body {
-  background-color: #cccccc;
+#fh5co-hotel-section .hotel-content .hotel-grid {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: block;
+    overflow: hidden
 }
 
+#fh5co-hotel-section .hotel-content .hotel-grid .price small {
+    color: rgba(255, 255, 255, 0.5)
+}
+
+#fh5co-hotel-section .hotel-content .hotel-grid>div {
+    width: 110px;
+    position: absolute;
+    top: 0;
+    left: -110px;
+    padding: 10px;
+    background: #ff5722;
+    color: #fff;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s
+}
+
+#fh5co-hotel-section .hotel-content .hotel-grid>div small {
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px
+}
+
+#fh5co-hotel-section .hotel-content .hotel-grid>div span {
+    display: block;
+    font-size: 18px
+}
+
+#fh5co-hotel-section .hotel-content .hotel-grid .book-now {
+    position: absolute;
+    bottom: -47px;
+    right: 0;
+    color: #fff;
+    width: 120px;
+    padding: 7px 0;
+    background: #3c4146;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s
+}
+
+#fh5co-hotel-section .hotel-content .hotel-grid .book-now:focus,
+#fh5co-hotel-section .hotel-content .hotel-grid .book-now:hover {
+    color: #fff!important
+}
+
+#fh5co-hotel-section .hotel-content .desc {
+    border: 1px solid #e6e6e6;
+    border-top: 0;
+    padding: 20px;
+    margin-bottom: 40px;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s
+}
+
+@media screen and (max-width:992px) {
+    #fh5co-hotel-section .hotel-content .desc {
+        margin-bottom: 40px
+    }
+}
+
+#fh5co-hotel-section .hotel-content .desc h3 {
+    font-size: 20px;
+    margin: 0 0 20px 0
+}
+
+#fh5co-hotel-section .hotel-content .desc h3 a {
+    color: rgba(0, 0, 0, 0.7)
+}
+
+#fh5co-hotel-section .hotel-content:focus .hotel-grid>div,
+#fh5co-hotel-section .hotel-content:hover .hotel-grid>div {
+    left: 0
+}
+
+#fh5co-hotel-section .hotel-content:focus .hotel-grid .book-now,
+#fh5co-hotel-section .hotel-content:hover .hotel-grid .book-now {
+    bottom: 0
+}
+
+#fh5co-hotel-section .hotel-content:focus .desc,
+#fh5co-hotel-section .hotel-content:hover .desc {
+    -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.06);
+    -ms-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.06);
+    -o-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.06)
+}
+
+#fh5co-main {
+    width: 85%;
+    float: right;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s
+}
+
+@media screen and (max-width:1200px) {
+    #fh5co-main {
+        width: 70%
+    }
+}
+
+@media screen and (max-width:768px) {
+    #fh5co-main {
+        width: 100%
+    }
+}
+
+#fh5co-main .fh5co-narrow-content {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 4em 0
+}
+
+@media screen and (max-width:768px) {
+    #fh5co-main .fh5co-narrow-content {
+        width: 100%;
+        padding: 3.5em 1em
+    }
 }
