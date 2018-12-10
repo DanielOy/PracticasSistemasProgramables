@@ -3,7 +3,7 @@ $host="localhost";
 $port=3306;
 $socket="";
 $user="root";
-$password="2017";
+$password="";
 $dbname="arduino";
 
 $con = new mysqli($host, $user, $password, $dbname, $port, $socket)
