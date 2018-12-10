@@ -6,7 +6,9 @@ include("config.php")
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Monitoreo de Temperatura</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap-reboot.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
@@ -14,30 +16,11 @@ include("config.php")
 </head>
 <body>
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark sidebarNavigation" data-sidebarClass="navbar-dark bg-dark">
-			<a class="navbar-brand" href="#">Control de temperatura</a>
-			<button class="navbar-toggler leftNavbarToggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-					aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+			<button class="navbar-toggler rightNavbarToggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+					aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation" onclick="window.history.go(-1); return false;">
+					<i class="fas fa-long-arrow-alt-left"></i>
 			</button>
-
-			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-					<ul class="navbar-nav mr-auto">
-							<li class="nav-item active">
-									<a class="nav-link" href="index.html">Inicio
-											<span class="sr-only">(current)</span>
-									</a>
-							</li>
-							<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-											aria-expanded="false">Información</a>
-									<div class="dropdown-menu" aria-labelledby="dropdown01">
-											<a class="dropdown-item" href="#">Contacto</a>
-											<a class="dropdown-item" href="#">Aviso Legal</a>
-									</div>
-							</li>
-					</ul>
-
-			</div>
+			<a class="navbar-brand" href="#" >Historial de temperatura</a>
 	</nav>
 	<br>
 
