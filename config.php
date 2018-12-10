@@ -10,8 +10,7 @@ $con = new mysqli($host, $user, $password, $dbname, $port, $socket)
 	or die ('Could not connect to the database server' . mysqli_connect_error());
 if (mysqli_get_connection_stats($con)){
     //echo "Conexion establecida";
-}else
-{
+}else{
     echo"Error de conexion";
 }
 
